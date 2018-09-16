@@ -5,5 +5,5 @@ sudo chown -R root:root ./go
 sudo mv go /usr/local
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-go get -u github.com/rakyll/hey
-
+/usr/local/go/bin/go get -u github.com/rakyll/hey
+sudo mv $HOME/go/bin/hey /usr/local
