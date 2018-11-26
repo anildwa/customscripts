@@ -6,7 +6,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStop=/home/anildwa/ts.sh
+ExecStop=/scripts/ts.sh
 TimeoutSec=300
 
 [Install]
