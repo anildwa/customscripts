@@ -1,0 +1,13 @@
+[Unit]
+Description=clean up script
+RequiresMountsFor=/mnt/testshare1
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/home/anildwa/ts.sh
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target network.target
